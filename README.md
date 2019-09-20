@@ -39,9 +39,11 @@ This repository is dedicated how I am tackling the technical challenge this time
 > 
 > [bootcamp@hackeryou.com](mailto:bootcamp@hackeryou.com)
 
-## Planning
-Since I failed to recreate the site accurately in my previous attempt, I basically reverse engineered the image provided. I opened up Adobe Photoshop and started tracing all the content blocks as accurately as I could. 
+## Reverse Engineering
+Since I failed to recreate the site accurately in the previous technical challenge, I basically reverse engineered the image provided to me. I opened up Adobe Photoshop and started tracing all the content blocks as accurately as I could to give myself a good basis on how to structure the site. 
 
-Here's the result:
+In the real world, clients or design teams would usually give you access to a PSD file where all the dimensions are accessible. Given that HackerYou's program is highly competitive, I see why they are adding an extra step to the process. 
+
+Taking into account the dimensions of the sections as well as margins and paddings, the photo below is what I came up with. 
 
 ![HackerYou technical assessment wireframe](https://i.imgur.com/Q6zOq5o.jpg)
