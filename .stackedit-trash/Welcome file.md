@@ -1,3 +1,4 @@
+
 # HackerYou - Technical Challenge 2019
 After one year of getting rejected from HackerYou's Web Development Immersive bootcamp, I decided to apply again for the 2020 winter cohort. You didn't think I was going to give up that easily, did you?
 
@@ -47,3 +48,7 @@ In the real world, clients or design teams would usually give you access to a PS
 Taking into account the dimensions of the sections as well as margins and paddings, the photo below is what I came up with. 
 
 ![HackerYou technical assessment wireframe](https://i.imgur.com/Q6zOq5o.jpg)
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE1NDA2MjAzNzZdfQ==
+-->
