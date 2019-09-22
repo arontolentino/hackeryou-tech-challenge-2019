@@ -68,7 +68,7 @@ body {
   margin: 0 auto;
   height: 245px;
   width: 610px;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.9);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -94,4 +94,33 @@ body {
   font-size: 14px;
   line-height: 1.7;
   font-weight: 500;
+}
+
+/**** Blog ****/
+.blog {
+  padding-top: 55px;
+  text-align: center;
+}
+
+.blog .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.blog h2 {
+  text-transform: uppercase;
+}
+
+.blog__list {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog__entry {
+  flex-basis: 250px;
+  margin-bottom: 25px;
+  background-color: #f6f7f9;
 }
