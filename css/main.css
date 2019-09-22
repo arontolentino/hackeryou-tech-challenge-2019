@@ -1,0 +1,15 @@
+.header {
+  max-width: 800px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.header__navigaiton ul {
+  list-style: none;
+}
+
+.header__navigation li {
+  display: inline-block;
+}
