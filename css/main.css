@@ -119,8 +119,12 @@ body {
   flex-wrap: wrap;
 }
 
+.blog__about {
+  padding-top: 20px;
+}
+
 .blog__entry {
-  flex-basis: 250px;
+  width: 250px;
   margin-bottom: 25px;
   background-color: #f6f7f9;
 }
