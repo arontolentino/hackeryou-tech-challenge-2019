@@ -1,13 +1,117 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__logo">
+          <h1>HackerYou</h1>
+        </div>
+
+        <nav class="header__navigation">
+          <ul class>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Bootcamp</a>
+            </li>
+            <li>
+              <a href="#">Part-Time</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="wrapper">
+        <div class="hero__content">
+          <h1>HackerYou Tech Test</h1>
+          <h2>twenty-nineteen</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+            consectetur adipiscing elit pellentesque labore et dolore incididunt
+            ut labore.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="wrapper">
+        <div class="blog__header">
+          <h2>Blog</h2>
+        </div>
+      </div>
+
+      <div class="blog__list">
+        <article class="blog__entry">
+          <img src="img/image-2.jpg" />
+          <div class="blog__content">
+            <h3>HackerYou Tech Test</h3>
+            <h4>March 9, 2019</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+              consectetur adipiscing elit pellentesque labore et dolore
+              incididunt ut labore.
+            </p>
+          </div>
+        </article>
+
+        <article class="blog__entry">
+          <img src="img/image-3.jpg" />
+          <h3>HackerYou Tech Test</h3>
+          <h4>March 9, 2019</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+            consectetur adipiscing elit pellentesque labore et dolore
+            incididunt ut labore.
+          </p>
+        </article>
+
+        <article class="blog__entry">
+          <img src="img/image-4.jpg" />
+          <div>
+            <h3>HackerYou Tech Test</h3>
+            <h4>March 9, 2019</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+              consectetur adipiscing elit pellentesque labore et dolore
+              incididunt ut labore. Amet
+              consectetur adipiscing elit pellentesque labore et dolore
+              incididunt ut labore.
+            </p>
+          </div>
+        </article>
+
+        <article class="blog__entry">
+          <img src="img/image-5.jpg" />
+          <div class="blog__content">
+            <h3>HackerYou Tech Test</h3>
+            <h4>March 9, 2019</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+              consectetur adipiscing elit pellentesque labore et dolore
+              incididunt ut labore.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
-
 export default {
   name: 'app',
   components: {
