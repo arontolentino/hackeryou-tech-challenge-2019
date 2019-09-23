@@ -255,10 +255,12 @@ body {
 }
 
 .blog__content a {
-  color: red;
+  color: #e40015;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 /**** NAVBAR ****/
