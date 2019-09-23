@@ -28,144 +28,147 @@
       </div>
     </header>
 
-    <section class="hero">
-      <div class="wrapper">
-        <div class="hero__content">
-          <h1>HackerYou Tech Test</h1>
-          <h2>twenty-nineteen</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-            consectetur adipiscing elit pellentesque labore et dolore incididunt
-            ut labore.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="blog">
-      <div class="header">
-        <h2>Blog</h2>
-      </div>
-      <div class="wrapper">
-        <div class="blog__list">
-          <div class="blog__entry">
-            <img src="../src/assets/image-2.jpg" />
-            <div class="blog__content">
-              <h3>HackerYou Tech Test</h3>
-              <h4>March 9, 2019</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                consectetur adipiscing elit pellentesque labore et.
-              </p>
-              <a href="#">Read More</a>
-            </div>
-          </div>
-
-          <div class="blog__entry">
-            <img src="../src/assets/image-3.jpg" />
-            <div class="blog__content">
-              <h3>HackerYou Tech Test</h3>
-              <h4>March 9, 2019</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                consectetur adipiscing elit pellentesque labore et.
-              </p>
-              <a href="#">Read More</a>
-            </div>
-          </div>
-
-          <div class="blog__entry blog__entry-large">
-            <img src="../src/assets/image-5.jpg" />
-            <div class="blog__content">
-              <h3>HackerYou Tech Test</h3>
-              <h4>March 9, 2019</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                consectetur adipiscing elit pellentesque labore et dolore
-                incididunt ut labore. Amet consectetur adipiscing elit pellentesque labore et dolore
-                incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <a href="#">Read More</a>
-            </div>
+    <main>
+      <section class="hero">
+        <div class="wrapper">
+          <div class="hero__content">
+            <h1>HackerYou Tech Test</h1>
+            <h2>twenty-nineteen</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+              consectetur adipiscing elit pellentesque labore et dolore incididunt
+              ut labore.
+            </p>
           </div>
         </div>
+      </section>
 
-        <div class="blog__about">
-          <div class="blog__entry">
-            <img src="../src/assets/image-4.jpg" />
-            <div class="blog__content">
-              <h3>About Us</h3>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                consectetur adipiscing elit pellentesque labore et dolore
-                incididunt ut labore. Amet consectetur adipiscing elit pellentesque labore et dolore
-                incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et.
-              </p>
-            </div>
-          </div>
+      <section class="blog">
+        <div class="header">
+          <h2>Blog</h2>
         </div>
-      </div>
-    </section>
+        <div class="wrapper">
+          <div class="blog__list">
+            <div class="blog__entry">
+              <img src="../src/assets/image-2.jpg" alt="test" />
+              <article class="blog__content">
+                <h3>HackerYou Tech Test</h3>
+                <h4>March 1st, 2018</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+                  consectetur adipiscing elit pellentesque labore et.
+                </p>
+                <a href="#">Read More</a>
+              </article>
+            </div>
 
-    <section class="related-posts">
-      <div class="header">
-        <h2>Related Posts</h2>
-      </div>
+            <div class="blog__entry">
+              <img src="../src/assets/image-3.jpg" alt="test" />
+              <article class="blog__content">
+                <h3>HackerYou Tech Test</h3>
+                <h4>March 1st, 2018</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+                  consectetur adipiscing elit pellentesque labore et.
+                </p>
+                <a href="#">Read More</a>
+              </article>
+            </div>
 
-      <div class="wrapper">
-        <div class="related-posts__list">
-          <div class="blog__entry blog__entry--related">
-            <img src="../src/assets/image-6.jpg" />
-            <div class="blog__content">
-              <h3>HackerYou Tech Test</h3>
-              <h4>March 9, 2019</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                consectetur adipiscing elit pellentesque labore et.
-              </p>
-              <a href="#">Read More</a>
+            <div class="blog__entry">
+              <img src="../src/assets/image-5.jpg" alt="test" />
+              <article class="blog__content">
+                <h3>HackerYou Tech Test</h3>
+                <h4>March 1st, 2018</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+                  consectetur adipiscing elit pellentesque labore et dolore
+                  incididunt ut labore. Amet consectetur adipiscing elit pellentesque labore et dolore
+                  incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#">Read More</a>
+              </article>
             </div>
           </div>
 
-          <div class="blog__entry blog__entry--related">
-            <img src="../src/assets/image-7.jpg" />
-            <div class="blog__content">
-              <h3>HackerYou Tech Test</h3>
-              <h4>March 9, 2019</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                consectetur adipiscing elit pellentesque labore et.
-              </p>
-              <a href="#">Read More</a>
-            </div>
-          </div>
-
-          <div class="blog__entry blog__entry--related">
-            <img src="../src/assets/image-8.jpg" />
-            <div class="blog__content">
-              <h3>HackerYou Tech Test</h3>
-              <h4>March 9, 2019</h4>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                consectetur adipiscing elit pellentesque labore et.
-              </p>
-              <a href="#">Read More</a>
+          <div class="blog__about">
+            <div class="blog__entry">
+              <img src="../src/assets/image-4.jpg" alt="test" />
+              <article class="blog__content">
+                <h3>About Us</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+                  consectetur adipiscing elit pellentesque labore et dolore
+                  incididunt ut labore. Amet consectetur adipiscing elit pellentesque labore et dolore
+                  incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et.
+                </p>
+              </article>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="related-posts">
+        <div class="header">
+          <h2>Related Posts</h2>
+        </div>
+
+        <div class="wrapper">
+          <div class="related-posts__list">
+            <div class="blog__entry blog__entry--related">
+              <img src="../src/assets/image-6.jpg" alt="test" />
+              <article class="blog__content">
+                <h3>HackerYou Tech Test</h3>
+                <h4>March 1st, 2018</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+                  consectetur adipiscing elit pellentesque labore et.
+                </p>
+                <a href="#">Read More</a>
+              </article>
+            </div>
+
+            <div class="blog__entry blog__entry--related">
+              <img src="../src/assets/image-7.jpg" alt="test" />
+              <article class="blog__content">
+                <h3>HackerYou Tech Test</h3>
+                <h4>March 1st, 2018</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+                  consectetur adipiscing elit pellentesque labore et.
+                </p>
+                <a href="#">Read More</a>
+              </article>
+            </div>
+
+            <div class="blog__entry blog__entry--related">
+              <img src="../src/assets/image-8.jpg" alt="test" />
+              <article class="blog__content">
+                <h3>HackerYou Tech Test</h3>
+                <h4>March 1st, 2018</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+                  consectetur adipiscing elit pellentesque labore et.
+                </p>
+                <a href="#">Read More</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
   </div>
 </template>
 
@@ -226,10 +229,6 @@ body {
   background-color: #fff;
 }
 
-.blog__entry--large {
-  width: 100%;
-}
-
 .blog__content {
   padding: 15px;
 }
@@ -246,10 +245,10 @@ body {
   font-style: italic;
   font-weight: 500;
   font-size: 9px;
-  margin-bottom: 5px;
 }
 
 .blog__content p {
+  padding-top: 5px;
   font-size: 9.5px;
   text-align: left;
   line-height: 1.5;
@@ -360,6 +359,10 @@ body {
 .blog__about {
   padding-top: 20px;
   flex-basis: 250px;
+}
+
+.blog__about h3 {
+  font-size: 16px;
 }
 
 /**** RELATED POSTS ****/
