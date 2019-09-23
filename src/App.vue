@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <header class="header">
+    <header class="navbar">
       <div class="wrapper">
-        <div class="header__logo">
+        <div class="navbar__logo">
           <h1>HackerYou</h1>
         </div>
 
-        <nav class="header__navigation">
+        <nav class="navbar__nav">
           <ul class>
             <li>
               <a href="#">Home</a>
@@ -44,7 +44,7 @@
     </section>
 
     <section class="blog">
-      <div class="blog__header">
+      <div class="header">
         <h2>Blog</h2>
       </div>
       <div class="wrapper">
@@ -59,6 +59,7 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
                 consectetur adipiscing elit pellentesque labore et.
               </p>
+              <a href="#">Read More</a>
             </div>
           </div>
 
@@ -72,6 +73,7 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
                 consectetur adipiscing elit pellentesque labore et.
               </p>
+              <a href="#">Read More</a>
             </div>
           </div>
 
@@ -88,6 +90,7 @@
                 incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+              <a href="#">Read More</a>
             </div>
           </div>
         </div>
@@ -113,13 +116,13 @@
     </section>
 
     <section class="related-posts">
-      <div class="blog__header">
+      <div class="header">
         <h2>Related Posts</h2>
       </div>
 
       <div class="wrapper">
         <div class="related-posts__list">
-          <div class="related-posts__entry">
+          <div class="blog__entry blog__entry--related">
             <img src="../src/assets/image-6.jpg" />
             <div class="blog__content">
               <h3>HackerYou Tech Test</h3>
@@ -129,10 +132,11 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
                 consectetur adipiscing elit pellentesque labore et.
               </p>
+              <a href="#">Read More</a>
             </div>
           </div>
 
-          <div class="related-posts__entry">
+          <div class="blog__entry blog__entry--related">
             <img src="../src/assets/image-7.jpg" />
             <div class="blog__content">
               <h3>HackerYou Tech Test</h3>
@@ -142,10 +146,11 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
                 consectetur adipiscing elit pellentesque labore et.
               </p>
+              <a href="#">Read More</a>
             </div>
           </div>
 
-          <div class="related-posts__entry">
+          <div class="blog__entry blog__entry--related">
             <img src="../src/assets/image-8.jpg" />
             <div class="blog__content">
               <h3>HackerYou Tech Test</h3>
@@ -155,6 +160,7 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
                 consectetur adipiscing elit pellentesque labore et.
               </p>
+              <a href="#">Read More</a>
             </div>
           </div>
         </div>
@@ -192,30 +198,82 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+/**** REUSABLE COMPONENTS ****/
+
 .wrapper {
   padding: 0 100px;
   margin: 0 auto;
   max-width: 1000px;
-}
-
-.blog__header {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
+  flex-wrap: wrap;
 }
-
-/**** HEADER ****/
 
 .header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.blog__entry {
+  flex-basis: 250px;
+  margin-bottom: 25px;
   background-color: #f6f7f9;
 }
 
-.header .wrapper {
+.blog__entry--related {
+  background-color: #fff;
+}
+
+.blog__entry--large {
+  width: 100%;
+}
+
+.blog__content {
+  padding: 15px;
+}
+
+.blog__content h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.blog__content h4 {
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 9px;
+  margin-bottom: 5px;
+}
+
+.blog__content p {
+  font-size: 9.5px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.blog__content a {
+  color: red;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 8px;
+}
+
+/**** NAVBAR ****/
+
+.navbar {
+  background-color: #f6f7f9;
+}
+
+.navbar .wrapper {
   align-items: center;
-  display: flex;
-  justify-content: space-between;
   height: 45px;
 }
 
-.header__logo h1 {
+.navbar__logo h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 21px;
   text-transform: uppercase;
@@ -223,16 +281,16 @@ body {
   letter-spacing: 1px;
 }
 
-.header__navigaiton ul {
+.navbar__nav ul {
   list-style: none;
 }
 
-.header__navigation li {
+.navbar__nav li {
   display: inline-block;
   margin: 0 8px;
 }
 
-.header__navigation a {
+.navbar__nav a {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 11.5px;
@@ -259,8 +317,6 @@ body {
   height: 245px;
   width: 610px;
   background: rgba(255, 255, 255, 0.9);
-  text-align: center;
-  display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
@@ -293,65 +349,17 @@ body {
   text-align: center;
 }
 
-.blog .wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 100px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.blog__header h2 {
-  text-transform: uppercase;
-  font-size: 17px;
-}
-
 .blog__list {
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 525px;
-}
-
-.blog__entry {
-  width: 250px;
-  margin-bottom: 25px;
-  background-color: #f6f7f9;
-}
-
-.blog__entry h3 {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-}
-
-.blog__entry h4 {
-  font-family: 'Noto Serif', serif;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 9px;
-  margin-bottom: 5px;
-}
-
-.blog__entry p {
-  font-size: 9.5px;
-  text-align: left;
-  line-height: 1.5;
-}
-
-.blog__entry-large {
-  width: 100%;
+  flex-basis: 525px;
 }
 
 .blog__about {
   padding-top: 20px;
-  max-width: 250px;
-}
-
-.blog__content {
-  padding: 15px;
+  flex-basis: 250px;
 }
 
 /**** RELATED POSTS ****/
@@ -361,43 +369,10 @@ body {
   text-align: center;
 }
 
-.related-posts .wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 100px;
-}
-
 .related-posts__list {
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.related-posts__entry {
-  width: 250px;
-  margin-bottom: 25px;
-  background-color: #fff;
-}
-
-.related-posts__entry h3 {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-}
-
-.related-posts__entry h4 {
-  font-family: 'Noto Serif', serif;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 9px;
-  margin-bottom: 5px;
-}
-
-.related-posts__entry p {
-  font-size: 9.5px;
-  text-align: left;
-  line-height: 1.5;
 }
 </style>
