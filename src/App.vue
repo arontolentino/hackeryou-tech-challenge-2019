@@ -32,9 +32,9 @@
       <section class="hero">
         <div class="wrapper">
           <div class="hero__content">
-            <h1>HackerYou Tech Test</h1>
-            <h2>twenty-nineteen</h2>
-            <p>
+            <h1 class="hero__content--title">HackerYou Tech Test</h1>
+            <h2 class="hero__content--date">twenty-nineteen</h2>
+            <p class="hero__content--body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
               consectetur adipiscing elit pellentesque labore et dolore incididunt
@@ -50,65 +50,31 @@
         </div>
         <div class="wrapper">
           <div class="blog__list">
-            <div class="blog__entry">
-              <img src="../src/assets/image-2.jpg" alt="test" />
+            <div class="blog__entry" v-for="(blog, index) in blogList" :key="index">
+              <img
+                class="blog__image"
+                v-bind:src="blog.blog_image"
+                v-bind:alt="blog.blog_image_alternative_text"
+              />
               <article class="blog__content">
-                <h3>HackerYou Tech Test</h3>
-                <h4>March 1st, 2018</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                  consectetur adipiscing elit pellentesque labore et.
-                </p>
-                <a href="#">Read More</a>
-              </article>
-            </div>
-
-            <div class="blog__entry">
-              <img src="../src/assets/image-3.jpg" alt="test" />
-              <article class="blog__content">
-                <h3>HackerYou Tech Test</h3>
-                <h4>March 1st, 2018</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                  consectetur adipiscing elit pellentesque labore et.
-                </p>
-                <a href="#">Read More</a>
-              </article>
-            </div>
-
-            <div class="blog__entry">
-              <img src="../src/assets/image-5.jpg" alt="test" />
-              <article class="blog__content">
-                <h3>HackerYou Tech Test</h3>
-                <h4>March 1st, 2018</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                  consectetur adipiscing elit pellentesque labore et dolore
-                  incididunt ut labore. Amet consectetur adipiscing elit pellentesque labore et dolore
-                  incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <a href="#">Read More</a>
+                <h3 class="blog__content--title">{{ blog.blog_title }}</h3>
+                <h4 class="blog__content--date">{{ blog.published_date }}</h4>
+                <p class="blog__content--body">{{ blog.blog_content }}</p>
+                <a class="blog__content--btn" v-bind:href="blog.blog_link">Read More</a>
               </article>
             </div>
           </div>
 
           <div class="blog__about">
-            <div class="blog__entry">
-              <img src="../src/assets/image-4.jpg" alt="test" />
+            <div class="blog__entry" v-for="(spotlight, index) in spotlightList" :key="index">
+              <img
+                class="blog__image"
+                v-bind:src="spotlight.blog_image"
+                v-bind:alt="spotlight.blog_image_alternative_text"
+              />
               <article class="blog__content">
-                <h3>About Us</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                  consectetur adipiscing elit pellentesque labore et dolore
-                  incididunt ut labore. Amet consectetur adipiscing elit pellentesque labore et dolore
-                  incididunt ut labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et.
-                </p>
+                <h3 class="blog__content--title">{{ spotlight.blog_title }}</h3>
+                <p class="blog__content--body">{{ spotlight.blog_content }}</p>
               </article>
             </div>
           </div>
@@ -119,48 +85,23 @@
         <div class="header">
           <h2>Related Posts</h2>
         </div>
-
         <div class="wrapper">
           <div class="related-posts__list">
-            <div class="blog__entry blog__entry--related">
-              <img src="../src/assets/image-6.jpg" alt="test" />
+            <div
+              class="blog__entry blog__entry--related"
+              v-for="(related, index) in relatedList"
+              :key="index"
+            >
+              <img
+                class="blog__image"
+                v-bind:src="related.blog_image"
+                v-bind:alt="related.blog_image_alternative_text"
+              />
               <article class="blog__content">
-                <h3>HackerYou Tech Test</h3>
-                <h4>March 1st, 2018</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                  consectetur adipiscing elit pellentesque labore et.
-                </p>
-                <a href="#">Read More</a>
-              </article>
-            </div>
-
-            <div class="blog__entry blog__entry--related">
-              <img src="../src/assets/image-7.jpg" alt="test" />
-              <article class="blog__content">
-                <h3>HackerYou Tech Test</h3>
-                <h4>March 1st, 2018</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                  consectetur adipiscing elit pellentesque labore et.
-                </p>
-                <a href="#">Read More</a>
-              </article>
-            </div>
-
-            <div class="blog__entry blog__entry--related">
-              <img src="../src/assets/image-8.jpg" alt="test" />
-              <article class="blog__content">
-                <h3>HackerYou Tech Test</h3>
-                <h4>March 1st, 2018</h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                  consectetur adipiscing elit pellentesque labore et.
-                </p>
-                <a href="#">Read More</a>
+                <h3 class="blog__content--title">{{ related.blog_title }}</h3>
+                <h4 class="blog__content--date">{{ related.published_date }}</h4>
+                <p class="blog__content--body">{{ related.blog_content }}</p>
+                <a class="blog__content--btn" v-bind:href="related.blog_link">Read More</a>
               </article>
             </div>
           </div>
@@ -213,21 +154,41 @@
 </template>
 
 <script>
+import { butter } from '@/buttercms';
+
 export default {
-  name: 'app'
+  name: 'app',
+  data() {
+    return {
+      blogList: [],
+      spotlightList: [],
+      relatedList: []
+    };
+  },
+  methods: {
+    getContent() {
+      butter.content.retrieve(['hy_tech_challenge_blog_posts']).then(res => {
+        this.blogList = res.data.data.hy_tech_challenge_blog_posts;
+      });
+
+      butter.content.retrieve(['hy_tech_challenge_related_posts']).then(res => {
+        this.relatedList = res.data.data.hy_tech_challenge_related_posts;
+      });
+
+      butter.content
+        .retrieve(['hy_tech_challenge_spotlight_posts'])
+        .then(res => {
+          this.spotlightList = res.data.data.hy_tech_challenge_spotlight_posts;
+        });
+    }
+  },
+  created() {
+    this.getContent();
+  }
 };
 </script>
 
 <style>
-/* #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
-
 *,
 *::after,
 *::before {
