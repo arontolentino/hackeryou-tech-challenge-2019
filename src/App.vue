@@ -168,7 +168,47 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="wrapper">
+        <div class="footer__content">
+          <h4>HackerYou Tech Test</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+            consectetur adipiscing elit pellentesque labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+          </p>
+        </div>
+        <div class="footer__nav">
+          <nav>
+            <ul class>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Bootcamp</a>
+              </li>
+              <li>
+                <a href="#">Part-Time</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit.</p>
+          <div class="footer__newsletter--subscribe">
+            <input placeholder="email address" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -202,6 +242,20 @@ body {
 }
 
 /**** REUSABLE COMPONENTS ****/
+
+p {
+  padding-top: 5px;
+  font-size: 9.5px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
 
 .wrapper {
   padding: 0 100px;
@@ -379,5 +433,76 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+/**** FOOTER ****/
+footer {
+  background-color: #444444;
+  padding: 45px 0;
+}
+
+footer .wrapper {
+  flex-wrap: nowrap;
+  text-align: left;
+  color: #fff;
+}
+
+.footer__content {
+  width: 33%;
+}
+
+.footer__content h4 {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__nav {
+  width: 9%;
+}
+
+.footer__nav ul {
+  list-style: none;
+}
+
+.footer__nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.footer__newsletter {
+  width: 47%;
+}
+
+.footer__newsletter input {
+  height: 35px;
+  width: 250px;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+}
+
+.footer__newsletter--subscribe {
+  padding-top: 10px;
+  display: flex;
+}
+
+.footer__newsletter button {
+  background-color: #e40015;
+  border: none;
+  color: #fff;
+  height: 35px;
+  width: 125px;
+  text-align: center;
+  font-size: 10px;
+  margin-left: 2.5px;
+  text-transform: uppercase;
 }
 </style>
