@@ -1,3 +1,4 @@
+
 # HackerYou - Technical Challenge 2019
 After one year of getting rejected from HackerYou's Web Development Immersive bootcamp, I decided to apply again for the 2020 winter cohort. You didn't think I was going to give up that easily, did you?
 
@@ -51,6 +52,8 @@ Taking into account the dimensions of the sections as well as margins and paddin
 ## Going Above and Beyond
 
 While the team at HackerYou is only looking to assess HTML and CSS skills, I decided to create the site with Vue.js, integrate a headless CMS called ButterCMS to manage the blog content on the site, and deploy the website to Firebase.
+
+[Click here to view the project on Firebase](https://hy-tech-challenge.firebaseapp.com/)
 
 I created three collections on ButterCMS to act as content buckets and pulled the data from those collections via the ButterCMS API to be stored in separate arrays within the Vue.js app. I then used the v-for directive to loop through the items in the arrays to populate the blog content. 
 
