@@ -604,15 +604,16 @@ footer .wrapper {
   }
 
   .blog__content--date {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .blog__content--body {
-    font-size: 11px;
+    font-size: 12px;
+    text-align: center;
   }
 
   .blog__content--btn {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 
