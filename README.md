@@ -47,3 +47,28 @@ In the real world, clients or design teams would usually give you access to a PS
 Taking into account the dimensions of the sections as well as margins and paddings, the photo below is what I came up with. 
 
 ![HackerYou technical assessment wireframe](https://i.imgur.com/Q6zOq5o.jpg)
+
+## Going Above and Beyond
+
+While the team at HackerYou is only looking to assess HTML and CSS skills, I decided to create the site with Vue.js, integrate a headless CMS called ButterCMS to manage the blog content on the site, and deploy the website to Firebase.
+
+I might be breaking a few rules her but I wanted to showcase that I can build simple front-end web applications and ready to take on HackerYou's curriculum. 
+
+![ButterCMS hackeryou collection](https://i.imgur.com/5LK36BE.png)
+
+## How To Use
+
+#### Project setup
+```
+npm install
+```
+
+#### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+#### Compiles and minifies for production
+```
+npm run build
+```
