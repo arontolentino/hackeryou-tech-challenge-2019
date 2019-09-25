@@ -52,9 +52,15 @@ Taking into account the dimensions of the sections as well as margins and paddin
 
 While the team at HackerYou is only looking to assess HTML and CSS skills, I decided to create the site with Vue.js, integrate a headless CMS called ButterCMS to manage the blog content on the site, and deploy the website to Firebase.
 
-I might be breaking a few rules her but I wanted to showcase that I can build simple front-end web applications and ready to take on HackerYou's curriculum. 
+I created three collections on ButterCMS to act as content buckets and pulled the data from those collections via the ButterCMS API to be stored in separate arrays within the Vue.js app. I then used the v-for directive to loop through the items in the arrays to populate the blog content. 
+
+I might be breaking a few rules here but I wanted to showcase that I can build simple front-end web applications and ready to take on HackerYou's curriculum. 
 
 ![ButterCMS hackeryou collection](https://i.imgur.com/5LK36BE.png)
+
+![ButterCMS hackeryou collection schema](https://i.imgur.com/c3TWZLF.png)
+
+![Firebase hosting](https://i.imgur.com/51IqKxB.png)
 
 ## How To Use
 
