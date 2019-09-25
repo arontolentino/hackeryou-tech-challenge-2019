@@ -146,7 +146,8 @@
             class="footer__newsletter--body"
           >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit.</p>
           <div class="footer__newsletter--subscribe">
-            <input type="email" placeholder="email address" />
+            <label for="email" class="hide">Enter your email</label>
+            <input type="email" id="email" placeholder="email address" />
             <button accesskey="s">Subscribe</button>
           </div>
         </div>
