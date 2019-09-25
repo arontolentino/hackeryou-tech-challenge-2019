@@ -95,7 +95,7 @@
               <img
                 class="blog__image"
                 v-bind:src="related.blog_image"
-                v-bind:alt="related.blog_image_alternative_text"
+                v-bind:alt="related.blog_alternative_text"
               />
               <article class="blog__content">
                 <h3 class="blog__content--title">{{ related.blog_title }}</h3>
@@ -237,6 +237,12 @@ h3 {
 
 #active {
   font-weight: 800;
+}
+
+.hide {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
 }
 
 .blog__entry {
