@@ -3,25 +3,25 @@
     <header class="navbar">
       <div class="wrapper">
         <div class="navbar__logo">
-          <h1>HackerYou</h1>
+          <span class="navbar__logo--text">HackerYou</span>
         </div>
 
         <nav class="navbar__nav">
           <ul class>
             <li>
-              <a href="#">Home</a>
+              <a accesskey="h" href="#" id="active" class="navbar__nav--item">Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a accesskey="a" href="#" class="navbar__nav--item">About</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a accesskey="c" href="#" class="navbar__nav--item">Contact</a>
             </li>
             <li>
-              <a href="#">Bootcamp</a>
+              <a accesskey="b" href="#" class="navbar__nav--item">Bootcamp</a>
             </li>
             <li>
-              <a href="#">Part-Time</a>
+              <a accesskey="p" href="#" class="navbar__nav--item">Part-Time</a>
             </li>
           </ul>
         </nav>
@@ -33,7 +33,7 @@
         <div class="wrapper">
           <div class="hero__content">
             <h1 class="hero__content--title">HackerYou Tech Test</h1>
-            <h2 class="hero__content--date">twenty-nineteen</h2>
+            <h4 class="hero__content--date">twenty-nineteen</h4>
             <p class="hero__content--body">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
@@ -109,11 +109,11 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="wrapper">
         <div class="footer__content">
-          <h4>HackerYou Tech Test</h4>
-          <p>
+          <h3 class="footer__content--title">HackerYou Tech Test</h3>
+          <p class="footer__content--body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
             consectetur adipiscing elit pellentesque labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
@@ -123,29 +123,31 @@
           <nav>
             <ul class>
               <li>
-                <a href="#">Home</a>
+                <a accesskey="h" href="#" id="active" class="footer__nav--item">Home</a>
               </li>
               <li>
-                <a href="#">About</a>
+                <a accesskey="a" href="#" class="footer__nav--item">About</a>
               </li>
               <li>
-                <a href="#">Bootcamp</a>
+                <a accesskey="b" href="#" class="footer__nav--item">Bootcamp</a>
               </li>
               <li>
-                <a href="#">Part-Time</a>
+                <a accesskey="p" href="#" class="footer__nav--item">Part-Time</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a accesskey="c" href="#" class="footer__nav--item">Contact</a>
               </li>
             </ul>
           </nav>
         </div>
         <div class="footer__newsletter">
-          <h3>Subscribe to Our Newsletter</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit.</p>
+          <h3 class="footer__newsletter--title">Subscribe to Our Newsletter</h3>
+          <p
+            class="footer__newsletter--body"
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet consectetur adipiscing elit.</p>
           <div class="footer__newsletter--subscribe">
-            <input placeholder="email address" />
-            <button>Subscribe</button>
+            <input type="email" placeholder="email address" />
+            <button accesskey="s">Subscribe</button>
           </div>
         </div>
       </div>
@@ -207,7 +209,6 @@ body {
 p {
   padding-top: 5px;
   font-size: 9.5px;
-  text-align: left;
   line-height: 1.5;
 }
 
@@ -234,6 +235,10 @@ h3 {
   font-size: 11px;
 }
 
+#active {
+  font-weight: 800;
+}
+
 .blog__entry {
   flex-basis: 250px;
   margin-bottom: 25px;
@@ -245,37 +250,42 @@ h3 {
 }
 
 .blog__content {
-  padding: 15px;
+  padding: 20px;
 }
 
-.blog__content h3 {
+.blog__content--title {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.5px;
 }
 
-.blog__content h4 {
+.blog__content--date {
   font-family: 'Noto Serif', serif;
   font-style: italic;
   font-weight: 500;
   font-size: 9px;
 }
 
-.blog__content p {
+.blog__content--body {
   padding-top: 5px;
   font-size: 9.5px;
   text-align: left;
   line-height: 1.5;
 }
 
-.blog__content a {
+.blog__content--btn {
   color: #e40015;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.5px;
+  transition: all 0.3s;
+}
+
+.blog__content--btn:hover {
+  color: #8f0210;
 }
 
 /**** NAVBAR ****/
@@ -287,31 +297,39 @@ h3 {
 .navbar .wrapper {
   align-items: center;
   height: 45px;
+  justify-content: space-between;
 }
 
-.navbar__logo h1 {
+.navbar__logo--text {
   font-family: 'Raleway', sans-serif;
   font-size: 21px;
   text-transform: uppercase;
   margin: 0;
   letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.navbar__nav {
+  width: 320px;
 }
 
 .navbar__nav ul {
+  display: flex;
   list-style: none;
+  justify-content: space-between;
 }
 
-.navbar__nav li {
-  display: inline-block;
-  margin: 0 8px;
-}
-
-.navbar__nav a {
+.navbar__nav--item {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 11.5px;
-  font-weight: 700;
+  font-weight: 600;
   color: #000;
+  transition: all 0.3s;
+}
+
+.navbar__nav a:hover {
+  color: #e40015;
 }
 
 /**** HERO ****/
@@ -336,16 +354,17 @@ h3 {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  text-align: center;
 }
 
-.hero__content h1 {
+.hero__content--title {
   font-size: 27px;
   font-weight: 600;
   text-transform: uppercase;
   margin: 0;
 }
 
-.hero__content h2 {
+.hero__content--date {
   font-size: 14px;
   font-family: 'Noto Serif', serif;
   font-style: italic;
@@ -353,10 +372,11 @@ h3 {
   margin-bottom: 10px;
 }
 
-.hero__content p {
+.hero__content--body {
   font-size: 14px;
   line-height: 1.7;
   font-weight: 500;
+  text-align: center;
 }
 
 /**** Blog ****/
@@ -378,11 +398,12 @@ h3 {
   flex-basis: 250px;
 }
 
-.blog__about h3 {
+.blog__about .blog__content--title {
   font-size: 16px;
 }
 
 /**** RELATED POSTS ****/
+
 .related-posts {
   background-color: #f6f7f9;
   padding: 55px 0 30px 0;
@@ -397,6 +418,7 @@ h3 {
 }
 
 /**** FOOTER ****/
+
 footer {
   background-color: #444444;
   padding: 45px 0;
@@ -412,7 +434,7 @@ footer .wrapper {
   width: 33%;
 }
 
-.footer__content h4 {
+.footer__content--title {
   font-size: 12px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -434,13 +456,23 @@ footer .wrapper {
   font-weight: 600;
   color: #fff;
   letter-spacing: 0.5px;
+  transition: all 0.3s;
+}
+
+.footer__nav a:hover {
+  color: #e40015;
 }
 
 .footer__newsletter {
   width: 47%;
 }
 
-.footer__newsletter input {
+.footer__newsletter--subscribe {
+  padding-top: 10px;
+  display: flex;
+}
+
+.footer__newsletter--subscribe input {
   height: 35px;
   width: 250px;
   border: none;
@@ -450,12 +482,7 @@ footer .wrapper {
   font-style: italic;
 }
 
-.footer__newsletter--subscribe {
-  padding-top: 10px;
-  display: flex;
-}
-
-.footer__newsletter button {
+.footer__newsletter--subscribe button {
   background-color: #e40015;
   border: none;
   color: #fff;
@@ -465,5 +492,143 @@ footer .wrapper {
   font-size: 10px;
   margin-left: 2.5px;
   text-transform: uppercase;
+  transition: 0.3s all;
+}
+
+.footer__newsletter--subscribe button:hover {
+  background-color: #8f0210;
+}
+
+/** MEDIA QUERIES **/
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    justify-content: center;
+  }
+
+  .hero .wrapper {
+    width: 80%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .related-posts__list,
+  .blog__list {
+    justify-content: space-evenly;
+  }
+
+  .blog__list {
+    flex-basis: auto;
+  }
+
+  .footer .wrapper {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer__newsletter--subscribe,
+  .footer__content--body {
+    text-align: center;
+  }
+
+  .footer__content,
+  .footer__nav,
+  .footer__newsletter {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer__nav {
+    order: -1;
+    width: 100%;
+  }
+
+  .footer__newsletter,
+  .footer__content {
+    width: 480%;
+    padding-top: 20px;
+  }
+
+  .footer__nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer__newsletter--subscribe {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .header {
+    font-size: 13px;
+  }
+
+  .navbar {
+    padding: 15px 0;
+  }
+
+  .navbar .wrapper {
+    justify-content: center;
+  }
+
+  .navbar__nav {
+    padding-top: 5px;
+    width: 100%;
+  }
+
+  .related-posts__list,
+  .blog__list {
+    justify-content: center;
+    flex-direction: column;
+    max-width: 250px;
+  }
+
+  .blog__entry {
+    width: 250px;
+  }
+
+  .blog__image {
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .blog__content--title {
+    font-size: 16px;
+  }
+
+  .blog__content--date {
+    font-size: 11px;
+  }
+
+  .blog__content--body {
+    font-size: 11px;
+  }
+
+  .blog__content--btn {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .footer__newsletter input {
+    width: auto;
+  }
+
+  .footer__newsletter button {
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .footer__nav ul {
+    justify-content: space-between;
+  }
 }
 </style>
