@@ -55,7 +55,7 @@ h3 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.3rem;
-  letter-spacing: 0.005rem;
+  letter-spacing: 0.05rem;
 }
 
 .wrapper {
@@ -101,7 +101,7 @@ h3 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.3rem;
-  letter-spacing: 0.005rem;
+  letter-spacing: 0.05rem;
 }
 
 .blog__content--date {
@@ -124,7 +124,7 @@ h3 {
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.005rem;
+  letter-spacing: 0.05rem;
   transition: all 0.3s;
 }
 
@@ -168,6 +168,7 @@ h3 {
   text-decoration: none;
   font-size: 1.15rem;
   font-weight: 600;
+  letter-spacing: 0.05rem;
   color: #000;
   transition: all 0.3s;
 }
@@ -282,7 +283,7 @@ footer .wrapper {
 
 .footer__content--title {
   font-size: 1.2rem;
-  letter-spacing: 0.005rem;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -295,13 +296,17 @@ footer .wrapper {
   list-style: none;
 }
 
+.footer__nav li {
+  padding: 0.4rem 0;
+}
+
 .footer__nav a {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
-  letter-spacing: 0.005rem;
+  letter-spacing: 0.05rem;
   transition: all 0.3s;
 }
 
@@ -407,7 +412,7 @@ MEDIA QUERIES
   .hero .wrapper {
     width: 80%;
     height: auto;
-    padding: 6rem;
+    padding: 4rem;
   }
 
   .blog__list,
@@ -535,13 +540,13 @@ MEDIA QUERIES
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   .footer__newsletter input {
-    width: auto;
+    width: 70%;
   }
 
   .footer__newsletter button {
-    width: 80px;
+    width: 8rem;
   }
 }
 
