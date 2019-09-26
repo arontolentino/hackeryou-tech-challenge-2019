@@ -43,6 +43,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+main {
+  margin-top: 45px;
+}
+
 /**** REUSABLE COMPONENTS ****/
 
 p {
@@ -136,6 +140,9 @@ h3 {
 
 .navbar {
   background-color: #f6f7f9;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 .navbar .wrapper {
@@ -397,21 +404,10 @@ HELPER CLASSES
 MEDIA QUERIES
 ========================================================================== 
 */
-
-/* @media only screen and (max-width: 1000px) {
-  .wrapper {
-    justify-content: space-evenly;
-    padding: 0 5rem;
+@media only screen and (max-width: 1000px) {
+  .hero {
+    background-size: auto;
   }
-
-  .blog__about .blog__entry {
-    width: 25rem;
-  }
-
-  .related-posts__list {
-    justify-content: space-evenly;
-  }
-} */
 
 @media only screen and (max-width: 850px) {
   .wrapper {
@@ -486,27 +482,33 @@ MEDIA QUERIES
 }
 
 @media only screen and (max-width: 623px) {
-  .burger-menu {
-    position: absolute;
-    left: 0;
-    top: 0;
-    line-height: 5.4rem;
-    display: inline-block;
-    margin-left: 2rem;
-    color: #222;
+  main {
+    margin-top: 5.4rem;
+  }
+  .navbar {
+    padding: 1.5rem 0;
   }
 
   .navbar__nav--links {
     display: none;
-    margin-top: 5px;
   }
 
   .navbar__nav--links li {
-    padding: 0.7rem 0;
+    padding-top: 1.2rem;
   }
 
   .navbar__nav--links a {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
+  }
+
+  .burger-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 1.3rem;
+    display: inline-block;
+    margin-left: 2rem;
+    color: #222;
   }
 
   .wrapper {
@@ -515,10 +517,6 @@ MEDIA QUERIES
 
   .header {
     font-size: 1.3rem;
-  }
-
-  .navbar {
-    padding: 1.5rem 0;
   }
 
   .navbar .wrapper {
