@@ -43,7 +43,7 @@
         </div>
 
         <nav class="navbar__nav">
-          <ul class>
+          <ul id="navbar__nav--links" class="navbar__nav--links">
             <li>
               <a accesskey="h" href="#" id="active" class="navbar__nav--item"
                 >Home</a
@@ -62,6 +62,15 @@
               <a accesskey="p" href="#" class="navbar__nav--item">Part-Time</a>
             </li>
           </ul>
+          <div>
+            <a
+              href="javascript:void(0);"
+              class="burger-menu"
+              onclick="mobileMenu()"
+            >
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
         </nav>
       </div>
     </header>
@@ -292,6 +301,7 @@
       </div>
     </footer>
 
-    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <!-- <script src="js/vendor/modernizr-3.7.1.min.js"></script> -->
+    <script src="js/script.js"></script>
   </body>
 </html>

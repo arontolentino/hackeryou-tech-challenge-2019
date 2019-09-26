@@ -157,7 +157,7 @@ h3 {
   width: 32rem;
 }
 
-.navbar__nav ul {
+.navbar__nav--links {
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -173,8 +173,18 @@ h3 {
   transition: all 0.3s;
 }
 
-.navbar__nav a:hover {
+.navbar__nav--links a:hover {
   color: #e40015;
+}
+
+.burger-menu {
+  display: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+.responsive-menu {
+  display: block !important;
 }
 
 /**** HERO ****/
@@ -403,7 +413,7 @@ MEDIA QUERIES
   }
 } */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   .wrapper {
     padding: 0 5rem;
     justify-content: center;
@@ -412,7 +422,7 @@ MEDIA QUERIES
   .hero .wrapper {
     width: 80%;
     height: auto;
-    padding: 4rem;
+    padding: 6rem;
   }
 
   .blog__list,
@@ -475,7 +485,30 @@ MEDIA QUERIES
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 623px) {
+  .burger-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 5.4rem;
+    display: inline-block;
+    margin-left: 2rem;
+    color: #222;
+  }
+
+  .navbar__nav--links {
+    display: none;
+    margin-top: 5px;
+  }
+
+  .navbar__nav--links li {
+    padding: 0.7rem 0;
+  }
+
+  .navbar__nav--links a {
+    font-size: 1.35rem;
+  }
+
   .wrapper {
     padding: 0 2rem;
   }
@@ -490,11 +523,15 @@ MEDIA QUERIES
 
   .navbar .wrapper {
     justify-content: center;
+    height: auto;
   }
 
   .navbar__nav {
-    padding-top: 0.5rem;
     width: 100%;
+  }
+
+  .hero .wrapper {
+    padding: 4rem;
   }
 
   .related-posts__list,
