@@ -1,30 +1,3 @@
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/* ==========================================================================
-BROWSER UPGRADE PROMPT
-========================================================================== 
-*/
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* ==========================================================================
-AUTHOR CUSTOM STYLES
-========================================================================== 
-*/
-
 *,
 *::after,
 *::before {
@@ -47,19 +20,17 @@ main {
   margin-top: 45px;
 }
 
-/**** REUSABLE COMPONENTS ****/
-
-p {
-  padding-top: 0.5rem;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
 h3 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.3rem;
   letter-spacing: 0.05rem;
+}
+
+p {
+  padding-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .wrapper {
@@ -71,72 +42,11 @@ h3 {
   flex-wrap: wrap;
 }
 
-.header {
+.section-title {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.1rem;
 }
-
-#active {
-  font-weight: 800;
-}
-
-.hide {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-}
-
-.blog__entry {
-  flex-basis: 25rem;
-  margin-bottom: 2.5rem;
-  background-color: #f6f7f9;
-}
-
-.blog__entry--related {
-  background-color: #fff;
-}
-
-.blog__content {
-  padding: 2rem;
-}
-
-.blog__content--title {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.3rem;
-  letter-spacing: 0.05rem;
-}
-
-.blog__content--date {
-  font-family: 'Noto Serif', serif;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 0.9rem;
-}
-
-.blog__content--body {
-  padding: 0.5rem 0;
-  font-size: 0.95rem;
-  text-align: left;
-  line-height: 1.5;
-}
-
-.blog__content--btn {
-  color: #e40015;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.05rem;
-  transition: all 0.3s;
-}
-
-.blog__content--btn:hover {
-  color: #8f0210;
-}
-
-/**** NAVBAR ****/
 
 .navbar {
   background-color: #f6f7f9;
@@ -241,7 +151,6 @@ h3 {
   text-align: center;
 }
 
-/**** Blog ****/
 .blog {
   padding: 5.5rem 0 3rem 0;
   text-align: center;
@@ -255,6 +164,55 @@ h3 {
   flex-basis: 52.5rem;
 }
 
+.blog__entry {
+  flex-basis: 25rem;
+  margin-bottom: 2.5rem;
+  background-color: #f6f7f9;
+}
+
+.blog__entry--related {
+  background-color: #fff;
+}
+
+.blog__content {
+  padding: 2rem;
+}
+
+.blog__content--title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 0.05rem;
+}
+
+.blog__content--date {
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.blog__content--body {
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.blog__content--btn {
+  color: #e40015;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  transition: all 0.3s;
+}
+
+.blog__content--btn:hover {
+  color: #8f0210;
+}
+
 .blog__about {
   display: flex;
   align-self: flex-start;
@@ -265,8 +223,6 @@ h3 {
 .blog__about .blog__content--title {
   font-size: 1.6rem;
 }
-
-/**** RELATED POSTS ****/
 
 .related-posts {
   background-color: #f6f7f9;
@@ -280,8 +236,6 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-/**** FOOTER ****/
 
 footer {
   background-color: #444444;
@@ -367,15 +321,13 @@ footer .wrapper {
   background-color: #8f0210;
 }
 
-/* ==========================================================================
+/* 
 HELPER CLASSES
-========================================================================== 
 */
 
 /*
  * Hide visually and from screen readers
  */
-
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -386,7 +338,6 @@ HELPER CLASSES
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  /* 1 */
 }
 
 .sr-only.focusable:active,
@@ -400,10 +351,14 @@ HELPER CLASSES
   width: auto;
 }
 
-/* ==========================================================================
+#active {
+  font-weight: 800;
+}
+
+/* 
 MEDIA QUERIES
-========================================================================== 
 */
+
 @media only screen and (max-width: 1000px) {
   .hero {
     background-size: auto;
@@ -515,7 +470,7 @@ MEDIA QUERIES
     padding: 0 2rem;
   }
 
-  .header {
+  .section-title {
     font-size: 1.3rem;
   }
 
