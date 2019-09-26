@@ -1,0 +1,516 @@
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* ==========================================================================
+BROWSER UPGRADE PROMPT
+========================================================================== 
+*/
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+AUTHOR CUSTOM STYLES
+========================================================================== 
+*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/**** REUSABLE COMPONENTS ****/
+
+p {
+  padding-top: 5px;
+  font-size: 9.5px;
+  line-height: 1.5;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.wrapper {
+  padding: 0 100px;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+#active {
+  font-weight: 800;
+}
+
+.hide {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.blog__entry {
+  flex-basis: 250px;
+  margin-bottom: 25px;
+  background-color: #f6f7f9;
+}
+
+.blog__entry--related {
+  background-color: #fff;
+}
+
+.blog__content {
+  padding: 20px;
+}
+
+.blog__content--title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.blog__content--date {
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 9px;
+}
+
+.blog__content--body {
+  padding-top: 5px;
+  font-size: 9.5px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.blog__content--btn {
+  color: #e40015;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+}
+
+.blog__content--btn:hover {
+  color: #8f0210;
+}
+
+/**** NAVBAR ****/
+
+.navbar {
+  background-color: #f6f7f9;
+}
+
+.navbar .wrapper {
+  align-items: center;
+  height: 45px;
+  justify-content: space-between;
+}
+
+.navbar__logo--text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 21px;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.navbar__nav {
+  width: 320px;
+}
+
+.navbar__nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.navbar__nav--item {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.navbar__nav a:hover {
+  color: #e40015;
+}
+
+/**** HERO ****/
+
+.hero {
+  background-image: url('../img/image-1.jpg');
+  height: 525px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .wrapper {
+  padding: 60px;
+  margin: 0 auto;
+  height: 245px;
+  width: 610px;
+  background: rgba(255, 255, 255, 0.9);
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.hero__content--title {
+  font-size: 27px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.hero__content--date {
+  font-size: 14px;
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.hero__content--body {
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 500;
+  text-align: center;
+}
+
+/**** Blog ****/
+.blog {
+  padding: 55px 0 30px 0;
+  text-align: center;
+}
+
+.blog__list {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 525px;
+}
+
+.blog__about {
+  padding-top: 20px;
+  flex-basis: 250px;
+}
+
+.blog__about .blog__content--title {
+  font-size: 16px;
+}
+
+/**** RELATED POSTS ****/
+
+.related-posts {
+  background-color: #f6f7f9;
+  padding: 55px 0 30px 0;
+  text-align: center;
+}
+
+.related-posts__list {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/**** FOOTER ****/
+
+footer {
+  background-color: #444444;
+  padding: 45px 0;
+}
+
+footer .wrapper {
+  flex-wrap: nowrap;
+  text-align: left;
+  color: #fff;
+}
+
+.footer__content {
+  width: 33%;
+}
+
+.footer__content--title {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__nav {
+  width: 9%;
+}
+
+.footer__nav ul {
+  list-style: none;
+}
+
+.footer__nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+}
+
+.footer__nav a:hover {
+  color: #e40015;
+}
+
+.footer__newsletter {
+  width: 47%;
+}
+
+.footer__newsletter--subscribe {
+  padding-top: 10px;
+  display: flex;
+}
+
+.footer__newsletter--subscribe input {
+  height: 35px;
+  width: 250px;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Noto Serif', serif;
+  font-style: italic;
+}
+
+.footer__newsletter--subscribe button {
+  background-color: #e40015;
+  border: none;
+  color: #fff;
+  height: 35px;
+  width: 125px;
+  text-align: center;
+  font-size: 10px;
+  margin-left: 2.5px;
+  text-transform: uppercase;
+  transition: 0.3s all;
+}
+
+.footer__newsletter--subscribe button:hover {
+  background-color: #8f0210;
+}
+
+/* ==========================================================================
+HELPER CLASSES
+========================================================================== 
+*/
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/* ==========================================================================
+MEDIA QUERIES
+========================================================================== 
+*/
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    justify-content: center;
+  }
+
+  .hero .wrapper {
+    width: 80%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .related-posts__list,
+  .blog__list {
+    justify-content: space-evenly;
+  }
+
+  .blog__list {
+    flex-basis: auto;
+  }
+
+  .footer .wrapper {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer__newsletter--subscribe,
+  .footer__content--body {
+    text-align: center;
+  }
+
+  .footer__content,
+  .footer__nav,
+  .footer__newsletter {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer__nav {
+    order: -1;
+    width: 100%;
+  }
+
+  .footer__newsletter,
+  .footer__content {
+    width: 480%;
+    padding-top: 20px;
+  }
+
+  .footer__nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer__newsletter--subscribe {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .header {
+    font-size: 13px;
+  }
+
+  .navbar {
+    padding: 15px 0;
+  }
+
+  .navbar .wrapper {
+    justify-content: center;
+  }
+
+  .navbar__nav {
+    padding-top: 5px;
+    width: 100%;
+  }
+
+  .related-posts__list,
+  .blog__list {
+    justify-content: center;
+    flex-direction: column;
+    max-width: 250px;
+  }
+
+  .blog__entry {
+    width: 250px;
+  }
+
+  .blog__image {
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .blog__content--title {
+    font-size: 16px;
+  }
+
+  .blog__content--date {
+    font-size: 12px;
+  }
+
+  .blog__content--body {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .blog__content--btn {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .footer__newsletter input {
+    width: auto;
+  }
+
+  .footer__newsletter button {
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .footer__nav ul {
+    justify-content: space-between;
+  }
+}
