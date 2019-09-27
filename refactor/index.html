@@ -2,25 +2,22 @@
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>HackerYou - Blog</title>
+    <title>HackerYou - Home</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
 
-    <!-- Google Fonts -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,800&display=swap"
+      href="https://fonts.googleapis.com/css?family=Raleway:500,700,800&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Noto+Serif:400&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Font Awesome -->
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
@@ -28,14 +25,6 @@
   </head>
 
   <body>
-    <!--[if IE]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
-
     <header class="navbar">
       <div class="wrapper">
         <div class="navbar__logo">
@@ -249,59 +238,84 @@
     </main>
 
     <footer class="footer">
-      <div class="wrapper">
-        <div class="footer__content">
-          <h3 class="footer__content--title">HackerYou Tech Test</h3>
-          <p class="footer__content--body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-            consectetur adipiscing elit pellentesque labore et. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut.
-          </p>
+      <div class="footer__main">
+        <div class="wrapper">
+          <div class="footer__content">
+            <h3 class="footer__content--title">HackerYou Tech Test</h3>
+            <p class="footer__content--body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
+              consectetur adipiscing elit pellentesque labore et. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor.
+            </p>
+          </div>
+          <div class="footer__nav">
+            <nav>
+              <ul class>
+                <li>
+                  <a
+                    accesskey="h"
+                    href="#"
+                    id="active"
+                    class="footer__nav--item"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a accesskey="a" href="#" class="footer__nav--item">About</a>
+                </li>
+                <li>
+                  <a accesskey="b" href="#" class="footer__nav--item"
+                    >Bootcamp</a
+                  >
+                </li>
+                <li>
+                  <a accesskey="p" href="#" class="footer__nav--item"
+                    >Part-Time</a
+                  >
+                </li>
+                <li>
+                  <a accesskey="c" href="#" class="footer__nav--item"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__newsletter">
+            <h3 class="footer__newsletter--title">
+              Subscribe to Our Newsletter
+            </h3>
+            <p class="footer__newsletter--body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              doeiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ametconsectetur adipiscing elit.
+            </p>
+            <div class="footer__newsletter--subscribe">
+              <label for="email" class="sr-only">Enter your email</label>
+              <input type="email" id="email" placeholder="email address" />
+              <button accesskey="s">Subscribe</button>
+            </div>
+          </div>
         </div>
-        <div class="footer__nav">
-          <nav>
-            <ul class>
-              <li>
-                <a accesskey="h" href="#" id="active" class="footer__nav--item"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a accesskey="a" href="#" class="footer__nav--item">About</a>
-              </li>
-              <li>
-                <a accesskey="b" href="#" class="footer__nav--item">Bootcamp</a>
-              </li>
-              <li>
-                <a accesskey="p" href="#" class="footer__nav--item"
-                  >Part-Time</a
-                >
-              </li>
-              <li>
-                <a accesskey="c" href="#" class="footer__nav--item">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer__newsletter">
-          <h3 class="footer__newsletter--title">Subscribe to Our Newsletter</h3>
-          <p class="footer__newsletter--body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-            consectetur adipiscing elit.
-          </p>
-          <div class="footer__newsletter--subscribe">
-            <label for="email" class="sr-only">Enter your email</label>
-            <input type="email" id="email" placeholder="email address" />
-            <button accesskey="s">Subscribe</button>
+      </div>
+      <div class="footer__secondary">
+        <div class="wrapper">
+          <div class="footer__copyright">
+            <h3>© 2018 Hackeryou</h3>
+          </div>
+          <div class="footer__social">
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- <script src="js/vendor/modernizr-3.7.1.min.js"></script> -->
-    <script src="js/script.js"></script>
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="scripts/scripts.js"></script>
   </body>
 </html>
