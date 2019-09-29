@@ -30,9 +30,9 @@ p {
 
 h3 {
   font-size: 1.25rem;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.075rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .wrapper {
@@ -98,7 +98,7 @@ h3 {
 .navbar__nav--item {
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.05rem;
   color: #000;
@@ -120,8 +120,6 @@ h3 {
 .responsive-menu {
   display: block !important;
 }
-
-/**** HERO ****/
 
 .hero {
   background-image: url('../assets/image-1.jpg');
@@ -156,7 +154,7 @@ h3 {
 
 .hero__content--title {
   font-size: 2.6rem;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   margin: 0;
 }
@@ -165,6 +163,7 @@ h3 {
   font-size: 1.4rem;
   font-family: 'Noto Serif', serif;
   font-style: italic;
+  font-weight: 400;
 }
 
 .hero__content--body {
@@ -213,6 +212,7 @@ h3 {
   font-style: italic;
   font-size: 0.9rem;
   padding-top: 0.2rem;
+  font-weight: 400;
 }
 
 .blog__content--body {
@@ -226,7 +226,7 @@ h3 {
   color: #e40015;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 7px;
+  font-size: 7.5px;
   font-weight: 700;
   letter-spacing: 0.05rem;
   -webkit-transition: all 0.3s;
@@ -321,11 +321,11 @@ h3 {
 }
 
 .footer__content {
-  width: 33%;
+  width: 34%;
 }
 
 .footer__nav {
-  width: 9%;
+  width: 8%;
 }
 
 .footer__nav ul {
@@ -333,14 +333,14 @@ h3 {
 }
 
 .footer__nav li {
-  padding: 0.37rem 0;
+  padding: 0.4rem 0;
 }
 
 .footer__nav a {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
   letter-spacing: 0.05rem;
   -webkit-transition: all 0.3s;
@@ -353,7 +353,7 @@ h3 {
 }
 
 .footer__newsletter {
-  width: 47%;
+  width: 46%;
 }
 
 .footer__newsletter--subscribe {
@@ -376,16 +376,18 @@ h3 {
 .footer__newsletter--subscribe button {
   background-color: #e40015;
   border: none;
-  color: #fff;
+  color: #f6f7f9;
   height: 3.5rem;
   width: 12.5rem;
   text-align: center;
   font-size: 1rem;
-  margin-left: 0.25rem;
+  margin-left: 0.3rem;
   text-transform: uppercase;
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
+  font-weight: 200;
+  letter-spacing: 0.05rem;
 }
 
 .footer__newsletter--subscribe button:hover {
@@ -525,7 +527,7 @@ MEDIA QUERIES
   }
 }
 
-@media only screen and (max-width: 623px) {
+@media only screen and (max-width: 630px) {
   main {
     margin-top: 5.4rem;
   }
@@ -598,6 +600,7 @@ MEDIA QUERIES
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    max-width: 25rem;
   }
 
   .blog__entry {
@@ -628,7 +631,7 @@ MEDIA QUERIES
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 418px) {
   .footer__newsletter input {
     width: 70%;
   }
